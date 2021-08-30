@@ -1,0 +1,23 @@
+﻿
+@model List<TOF.Bank_Test.Web.Models.MovementListItemViewModel>
+<div>
+    <table id="movimientos">
+        <thead>
+            <tr>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Importe</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var move in Model)
+            {
+                <tr>
+                    <td>@move.Source</td>
+                    <td>@move.Target</td>
+                    <td>@move.Amount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
